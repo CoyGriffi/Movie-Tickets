@@ -16,7 +16,7 @@ $(document).ready(function() {
     let age = $("#age").val();
     let showtime = $("#showtime").val();
     let userInput = new ticket (movie, age, showtime);
-    if (userInput.movieName === "Die Hard") {
+    if (userInput.movieName === "newMovie") {
       Ticketprice += 5;
     } 
     if (userInput.age === "Senior") {
@@ -25,6 +25,7 @@ $(document).ready(function() {
     if (userInput.showtime === "17" || userInput.showtime === "20") {
       Ticketprice += 5;
     }
-    alert(Ticketprice);
+    //alert(Ticketprice);
+    document.getElementById("price").innerHTML = " Your Ticket price is $" + Ticketprice;
   });
 });
