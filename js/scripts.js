@@ -3,6 +3,7 @@ function ticket(movieName, age, showtime) {
   this.movieName = movieName;
   this.age = age;
   this.showtime = showtime;
+}
 
 
 
@@ -11,8 +12,10 @@ $(document).ready(function() {
   $("form#submit").submit(function(event) {
     event.preventDefault();
     let Ticketprice = 10;
-    let userInput = new ticket (($("#showtime").val()), ($("#age").val()), ($("#movie").val()));
-
+    let movie = $("#movie").val();
+    let age = $("#age").val();
+    let showtime = $("#showtime").val();
+    let userInput = new ticket (movie, age, showtime);
     if (userInput.movieName === "Die Hard") {
       Ticketprice += 5;
     } 
