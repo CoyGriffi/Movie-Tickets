@@ -9,15 +9,31 @@
   <Title>Purchase Tickets</Title>
 </head>
 <body>
-  <h1>Movie Theater</h1>
-  <h3>Please select your movie tickets below</h3>
-  <select name="movie" id="movie">
-    <option value="The Holiday">The Holiday</option>
-    <option value="Elf">Elf</option>
-    <option value="Die Hard">Die Hard</option>
-    <option value="Krampus">Krampus</option>
-  </select>
-  
+  <form id="submit">
+    <h1>Movie Ticket Checkout</h1>
+    <h3>Please select your movie tickets below</h3>
+    <select name="movie" id="movie">
+      <option value="The Holiday">The Holiday</option>
+      <option value="Elf">Elf</option>
+      <option value="Die Hard">Die Hard 5 (NEW!)</option>
+      <option value="Krampus">Krampus</option>
+    </select>
+    <h3>Please select a Show time</h3>
+    <select name="showtime" id="showtime">
+      <option value="10">10:00AM</option>
+      <option value="12">12:00PM</option>
+      <option value="17">5:00</option>
+      <option value="20">8:00</option>
+    </select>
+    <h3>Please select age group</h3>
+    <select name="age" id="age">
+      <option value="child">Child</option>
+      <option value="Adult">Adult</option>
+      <option value="Senior">Senior</option>
+    </select> <br>
+    <button class = "btn btn-dark" type = "submit">Find your ticket!</button>
+  </form>
+    
 </body>
 
 </html>

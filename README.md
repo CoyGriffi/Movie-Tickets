@@ -6,7 +6,11 @@
 
 ## 📋 Description
 
-[....]
+## Specifications
+
+Describe: This contructor will contain an object with movie name, view time and age of attendee. 
+Input: ticket(movieName: "elf", age: "12", showtime: "5:00")
+Output: ticket{Elf,12,5:00}
 
 ## ⚙️ Setup/Installation Requirements 
 
